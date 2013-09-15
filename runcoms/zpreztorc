@@ -32,7 +32,12 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'completion' \
-  'prompt'
+  'prompt' \
+  'autojump' \
+  'git' \
+  'command-not-found' \
+  'history-substring-search' \
+  'syntax-highlighting'
 
 #
 # Editor
