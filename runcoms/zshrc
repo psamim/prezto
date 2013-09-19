@@ -25,3 +25,5 @@ bindkey -M filterselect '^E' accept-search
 bindkey '^P' zaw-process
 bindkey '^F' zaw-open-file
 
+#Aliases
+alias tmux="tmux -2"
