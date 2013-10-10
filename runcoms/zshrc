@@ -26,5 +26,5 @@ bindkey '^P' zaw-process
 bindkey '^F' zaw-open-file
 
 #Aliases
-alias tmux="tmux -2"
+alias tmux="tmux -2 attach"
 alias bower='noglob bower'
