@@ -10,10 +10,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Customize to your needs...
-export EDITOR=vim
-alias ack=ack-grep
-
 # Zaw
 source "${ZDOTDIR:-$HOME}/.zsh/zaw/zaw.zsh"
 zstyle ':filter-select' max-lines 4 # use $LINES - 4 for filter-select
