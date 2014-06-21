@@ -24,12 +24,17 @@ bindkey '^F' zaw-open-file
 #Aliases
 alias tmux="tmux -2 attach"
 alias bower='noglob bower'
-alias down='aria2c --conf-path=${HOME}/.aria2/aria2.conf'
+alias down="aria2c --conf-path=${HOME}/.aria2/aria2.conf"
+alias tdown="aria2c --all-proxy=http://127.0.0.1:8123 --conf-path=${HOME}/.aria2/aria2.conf"
 alias fly='~/src/sshuttle/sshuttle  --dns -r 52565751e0b8cd99d30001ba@private-psamim.rhcloud.com 0/0 --exclude-from ~/src/sshuttle/excludes'
+alias 'tyoutube'='torify youtube-dl'
 
 # Pacman
  alias pacupg='sudo pacman -Syu'        # Synchronize with repositories and then upgrade packages that are out of date on the local system.
- alias pacins='sudo powerpill -S'           # Install specific package(s) from the repositories
+ alias pacins='sudo pacman -S'           # Install specific package(s) from the repositories
  alias pacrem='sudo pacman -Rns'        # Remove the specified package(s), its configuration(s) and unneeded dependencies
  alias pacinf='pacman -Si'              # Display information about a given package in the repositories
  alias pacsearch='pacman -Ss'             # Search for package(s) in the repositories
+
+PATH="`ruby -e 'puts Gem.user_dir'`/bin:$PATH"
+PATH="/home/samim/.cabal/bin:$PATH"
