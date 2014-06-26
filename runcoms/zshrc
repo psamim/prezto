@@ -37,4 +37,6 @@ alias 'tyoutube'='torify youtube-dl'
  alias pacsearch='pacman -Ss'             # Search for package(s) in the repositories
 
 PATH="`ruby -e 'puts Gem.user_dir'`/bin:$PATH"
-PATH="/home/samim/.cabal/bin:$PATH"
+PATH="$HOME/.cabal/bin:$PATH"
+PATH="$HOME/.bin:$PATH"
+#export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd'
