@@ -7,7 +7,6 @@
 
 # Pure prompt
 fpath=( "$HOME/.zsh/functions" $fpath )
-autoload -U promptinit && promptinit
 
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
@@ -34,11 +33,11 @@ alias fly='~/src/sshuttle/sshuttle  --dns -r 52565751e0b8cd99d30001ba@private-ps
 alias 'tyoutube'='torify youtube-dl'
 
 # Pacman
- alias pacupg='sudo pacman -Syu'  # Synchronize with repositories and then upgrade packages that are out of date on the local system.
- alias pacins='sudo pacman -S'    # Install specific package(s) from the repositories
- alias pacrem='sudo pacman -Rns'  # Remove the specified package(s), its configuration(s) and unneeded dependencies
- alias pacinf='pacman -Si'        # Display information about a given package in the repositories
- alias pacsearch='pacman -Ss'     # Search for package(s) in the repositories
+alias pacupg='sudo pacman -Syu'  # Synchronize with repositories and then upgrade packages that are out of date on the local system.
+alias pacins='sudo pacman -S'    # Install specific package(s) from the repositories
+alias pacrem='sudo pacman -Rns'  # Remove the specified package(s), its configuration(s) and unneeded dependencies
+alias pacinf='pacman -Si'        # Display information about a given package in the repositories
+alias pacsearch='pacman -Ss'     # Search for package(s) in the repositories
 
 PATH="`ruby -e 'puts Gem.user_dir'`/bin:$PATH"
 PATH="$HOME/.cabal/bin:$PATH"
