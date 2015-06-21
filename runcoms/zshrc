@@ -29,18 +29,23 @@ bindkey '^F' zaw-open-file
 alias tmux="tmux -2 attach"
 alias bower='noglob bower'
 alias down="aria2c --conf-path=${HOME}/.aria2/aria2.conf"
-alias tdown="aria2c --all-proxy=http://127.0.0.1:8123 --conf-path=${HOME}/.aria2/aria2.conf"
+alias tdown="aria2c --all-proxy=http://127.0.0.1:7777 --conf-path=${HOME}/.aria2/aria2.conf"
 alias fly='~/src/sshuttle/sshuttle  --dns -r 52565751e0b8cd99d30001ba@private-psamim.rhcloud.com 0/0 --exclude-from ~/src/sshuttle/excludes'
 alias 'tyoutube'='torify youtube-dl'
 
 # Pacman
- alias pacupg='sudo pacman -Syu'        # Synchronize with repositories and then upgrade packages that are out of date on the local system.
- alias pacins='sudo pacman -S'           # Install specific package(s) from the repositories
- alias pacrem='sudo pacman -Rns'        # Remove the specified package(s), its configuration(s) and unneeded dependencies
- alias pacinf='pacman -Si'              # Display information about a given package in the repositories
- alias pacsearch='pacman -Ss'             # Search for package(s) in the repositories
+ alias pacupg='sudo pacman -Syu'  # Synchronize with repositories and then upgrade packages that are out of date on the local system.
+ alias pacins='sudo pacman -S'    # Install specific package(s) from the repositories
+ alias pacrem='sudo pacman -Rns'  # Remove the specified package(s), its configuration(s) and unneeded dependencies
+ alias pacinf='pacman -Si'        # Display information about a given package in the repositories
+ alias pacsearch='pacman -Ss'     # Search for package(s) in the repositories
 
 PATH="`ruby -e 'puts Gem.user_dir'`/bin:$PATH"
 PATH="$HOME/.cabal/bin:$PATH"
 PATH="$HOME/.bin:$PATH"
+PATH="/usr/local/heroku/bin:$PATH"
+export GOPATH="$HOME/.go"
+PATH="$PATH:$GOPATH/bin"
+ANDROID_HOME="/home/samim/.android-sdk/"
 #export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd'
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
